@@ -12,43 +12,58 @@
       <h1>Nicci's Hair Emporium</h1>
       <h3>Please complete the form and hit submit to confirm your request.</h3>
     </div>
-    <button type="submit" class="btn" style="float: right;">Submit!</button>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-lg-6">
-        <form id="appt">
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input id="name" class="form-control" type="text">
+    <div>
+      <form id="appt">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="phone">Your Phone Number:</label>
+              <input id="phone" class="form-control" type="number">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input id="email" class="form-control" type="text">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="phone">Your Phone Number:</label>
-            <input id="phone" class="form-control" type="text">
+          <div class="col-lg-5">
+            <div class="form-group">
+              <label for="date">Requested Date of Service:</label>
+              <input id="date" class="form-control" type="date">
+            </div>
+            <div class="form-group">
+              <label for="time">Requested Time of Service:</label>
+              <input id="time" class="form-control" type="time">
+            </div>
+            <!-- <label for="appt-type">Service Requested:</label>
+              <select id="appt-type" class="form-control" type="option">
+              <option value="new-client">New Client Consult</option>
+              <option value="short-cut">Short Haircut</option>
+              <option value="long-cut">Long Haircut</option>
+              <option value="hair-dye">Cut and Color</option> -->
           </div>
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input id="email" class="form-control" type="text">
+          <div class="col-sm-1">
           </div>
-          <br>
-      </div>
-      <div class="col-lg-6">
-        <div class="form-group">
-          <label for="date-picker">Requested Date of Service:</label>
-          <input id="date-picker" class="form-control" type="text">
+        </div>  
+        <button type="submit" class="btn">Submit!</button>
+      </form>   
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card" id="confirmation">
+            <div class="card-body">
+              <div class="card-title">Thank you, <span class="name"></span>!</div>
+                <p>
+                Your appointment is scheduled for <span class="date"></span> at <span class="time"></span>. You will receive an email confirmation at <span class="email"></span> as well as a text message to <span class="phone"></span> with an appointment reminder.
+                </p>
+            </div>
+          </div> 
         </div>
-        <div class="form-group">
-          <label for="time">Requested Time of Service:</label>
-          <input id="time" class="form-control" type="text">
-        </div>
-        <label for="appt-type">Service Requested:</label>
-          <select id="appt-type" class="form-control">
-          <option value="new-client">New Client Consult</option>
-          <option value="short-cut">Short Haircut</option>
-          <option value="long-cut">Long Haircut</option>
-          <option value="hair-dye">Cut and Color</option>
       </div>
-        </form>
-    </div>      
+      <br>
+    </div>
   </div>
 </html>
